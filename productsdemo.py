@@ -18,7 +18,7 @@ products = [
 
 ]
 def myFunc():
-return ""
+    return ""
 print(reduce(lambda price1, price2 : price1+price2,(map(lambda p : p['price'],filter(lambda product: product['price'] > 10000.0, products))),10))
 
 myFunc()
